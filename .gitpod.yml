@@ -6,7 +6,9 @@ tasks:
     init: func host start
 
 ports:
-  - port: 7071
+  - name: Azure Function
+    description: Azure Function local emulator preview
+    port: 7071
     onOpen: open-preview
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
