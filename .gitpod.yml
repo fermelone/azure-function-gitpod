@@ -3,7 +3,7 @@ image:
 
 tasks:
   - name: Run
-    init: func host start
+    command: func host start
 
 ports:
   - name: Azure Function
