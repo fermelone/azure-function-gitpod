@@ -2,8 +2,12 @@ image:
   file: .gitpod.dockerfile
 
 tasks:
+  - name: Build
+    init: python -m venv .venv
   - name: Run
-    command: func host start
+    command: |
+      source .venv/bin/activate
+      func host start
 
 ports:
   - name: Azure Function
